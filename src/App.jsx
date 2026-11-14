@@ -13,11 +13,15 @@ function App() {
 
   return (
    <>
-   <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/movies' element={<Movies/>}/>
-    <Route path='/movies/:movieId' element={<MovieDetails/>}/>
-   </Routes>
+   <nav>
+      <NavLink to="/">Home</NavLink>{" / "}
+      <NavLink to="/movies">Movies</NavLink>
+    </nav>
+     <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/movies' element={<Movies/>}/>
+      <Route path='/movies/:movieId' element={<MovieDetails/>}/>
+     </Routes>
    </>
   )
 }

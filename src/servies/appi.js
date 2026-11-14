@@ -15,3 +15,14 @@ export async function getTrendingMovies() {
 
   return response.data.results;
 }
+
+
+
+export async function getMovieDetailes(movieID){
+    const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieID}?language=en-US`,{
+        params: {
+            api_key:API_KEY,
+        }
+    })
+    return response.data
+}
