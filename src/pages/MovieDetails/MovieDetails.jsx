@@ -1,6 +1,6 @@
 import { useEffect, useState,  } from "react"
 import { useLocation, useParams, Link } from "react-router-dom"
-import { getMovieDetailes } from "../../../services/api"
+import { getMovieDetailes } from "../../servies/appi"
 function MovieDetails(){
     const [movie, setMovie] = useState(null)
     const location = useLocation()
