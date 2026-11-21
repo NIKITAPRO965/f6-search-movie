@@ -1,3 +1,6 @@
+@import-normalize;
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -181,4 +184,19 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+
+.movie-img{
+  width: 250px;
+  margin: 0 auto;
+}
+
+.ul-ul{
+  list-style: none;
+  margin: 0 ;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }

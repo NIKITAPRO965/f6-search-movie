@@ -19,10 +19,20 @@ export async function getTrendingMovies() {
 
 
 export async function getMovieDetailes(movieID){
-    const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieID}?language=en-US`,{
+    const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieID}`,{
         params: {
             api_key:API_KEY,
         }
     })
     return response.data
+}
+
+
+export async function getMovieCredits(movieID){
+  const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieID}/credits`,{
+    params: {
+      api_key: API_KEY,
+    }
+  })
+  return response.data.cast
 }

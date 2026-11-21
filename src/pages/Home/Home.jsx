@@ -5,7 +5,7 @@ function Home(){
     const  [movies, setMovies] = useState([])
     useEffect(()=>{
         async function fetchMovies(){
-            const data = await getTrendiesMovies()
+            const data = await getTrendingMovies()
             setMovies(data)
         }
         fetchMovies()
