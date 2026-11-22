@@ -21,8 +21,8 @@ function MovieDetails(){
     return <p>Loading...</p>;
   }
   
-    console.log(movie);
-    console.log(movie.title);
+    // console.log(movie);
+    // console.log(movie.title);
     
     return(
         <>
