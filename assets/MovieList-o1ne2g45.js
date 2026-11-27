@@ -1,0 +1,1 @@
+import{a as e,c as t,i as n}from"./index-CojFtlok.js";var r=n();function i({movies:n}){let i=t();return(0,r.jsx)(r.Fragment,{children:(0,r.jsx)(`ul`,{children:n.map(t=>(0,r.jsx)(`li`,{children:(0,r.jsx)(e,{state:i,to:`/movies/${t.id}`,children:t.title})},t.id))})})}export{i as t};

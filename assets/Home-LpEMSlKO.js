@@ -1,0 +1,1 @@
+import{d as e,i as t,n,u as r}from"./index-CojFtlok.js";import{t as i}from"./MovieList-o1ne2g45.js";var a=e(r(),1),o=t();function s(){let[e,t]=(0,a.useState)([]);return(0,a.useEffect)(()=>{async function e(){let e=await n();t(e)}e()},[]),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(`h1`,{children:`Trending Today`}),(0,o.jsx)(i,{movies:e})]})}export{s as default};
