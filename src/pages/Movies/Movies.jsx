@@ -1,4 +1,3 @@
-// import style from "./Movies.module.css"
 import { useState } from "react"
 import { searchMovies } from "../../servies/appi"
 import MovieList from "../../components/MovieList/MovieList"
@@ -12,7 +11,6 @@ function Movies(){
         const data = await searchMovies(query)
         setMovies(data)
     }
-    // console.log(movies);
     
 return(<>
 <h1>Movies</h1>
